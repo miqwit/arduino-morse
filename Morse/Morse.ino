@@ -13,38 +13,38 @@ void setup() {
   // initialize digital pin 13 as an output.
   pinMode(13, OUTPUT);
 
-  // Define morse alphabet
-  alphabet[97] = ".-";
-  alphabet[98] = "-...";
-  alphabet[99] = "-.-.";
-  alphabet[100] = "-..";
-  alphabet[101] = ".";
-  alphabet[102] = "..-.";
-  alphabet[103] = "--.";
-  alphabet[104] = "....";
-  alphabet[105] = "..";
-  alphabet[106] = ".---";
-  alphabet[107] = "-.-";
-  alphabet[108] = ".-..";
-  alphabet[109] = "--";
-  alphabet[110] = "-.";
-  alphabet[111] = "---";
-  alphabet[112] = ".--.";
-  alphabet[113] = "--.-";
-  alphabet[114] = ".-.";
-  alphabet[115] = "...";
-  alphabet[116] = "-";
-  alphabet[117] = "..-";
-  alphabet[118] = "...-";
-  alphabet[119] = ".--";
-  alphabet[120] = "-..-";
-  alphabet[121] = "-.--";
-  alphabet[122] = "--..";
+  // Define morse alphabet. Indexed by ascii code
+  alphabet[97] = ".-";    // a
+  alphabet[98] = "-...";  // b
+  alphabet[99] = "-.-.";  // c
+  alphabet[100] = "-..";  // d
+  alphabet[101] = ".";    // e
+  alphabet[102] = "..-."; // f
+  alphabet[103] = "--.";  // g
+  alphabet[104] = "...."; // h
+  alphabet[105] = "..";   // i
+  alphabet[106] = ".---"; // j
+  alphabet[107] = "-.-";  // k
+  alphabet[108] = ".-.."; // l
+  alphabet[109] = "--";   // m
+  alphabet[110] = "-.";   // n
+  alphabet[111] = "---";  // o
+  alphabet[112] = ".--."; // p
+  alphabet[113] = "--.-"; // q
+  alphabet[114] = ".-.";  // r
+  alphabet[115] = "...";  // s
+  alphabet[116] = "-";    // t
+  alphabet[117] = "..-";  // u
+  alphabet[118] = "...-"; // v
+  alphabet[119] = ".--";  // w
+  alphabet[120] = "-..-"; // x
+  alphabet[121] = "-.--"; // y
+  alphabet[122] = "--.."; // z
 }
 
 // Will loop the morse code forever
 void loop() {
-  String text = "morse code will never die ";
+  String text = "morse code will never die "; // This is the text that will be translated to Morse
   text.toLowerCase();
   int len = text.length();
 
